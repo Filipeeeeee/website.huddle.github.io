@@ -129,6 +129,7 @@ body {
     background-image: url("/image/Colmeia\ Tech.PNG");
     background-repeat: repeat;
     background-size: 50%;
+    box-sizing: border-box;
 }
 
 #navbar {
@@ -137,6 +138,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background: #674baf;
     width: 80vw;
+    box-sizing: border-box;
 }
 
 #about-content {
@@ -144,7 +146,9 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
+    flex-direction: column;
     padding: 2rem 0;
+    box-sizing: border-box;
 }
 
 #about-content h1 {
@@ -155,7 +159,7 @@ body {
 }
 
 .center-image{
-    width: 80vw;
+    width: 100%;
     padding: 1rem 5rem;
 }
 
@@ -175,14 +179,14 @@ body {
     color:rgba(122, 10, 122, 1);
 }
 
-#image {
+.image {
     width: 50%;
     padding: 0 2rem;
     text-align: center;
 }
 
-#image img {
-    width: 70%;
+.image img {
+    width: 200px;
 }
 
 #list-style {
@@ -203,6 +207,8 @@ h2 {
     color: #fff;
     padding: 1rem 0;
 }
+
+
 
 @media (max-width: 1440px) {
     .nav-list {
